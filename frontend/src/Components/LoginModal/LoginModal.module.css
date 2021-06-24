@@ -1,0 +1,47 @@
+* {
+  border: 0;
+}
+
+.LoginModalContainer {
+  width: 500px;
+  margin: 10vh auto;
+  padding: 2.5rem;
+  height: 450px;
+  box-shadow: 0px 11px 19px -3px #898989;
+  background: #faf9f6;
+}
+.BtnPrimary {
+  background: #04aafe;
+  color: white;
+  padding: 0.75rem;
+  display: block;
+  margin: 0 auto;
+  width: 50%;
+  font-weight: bold;
+  border-radius: 15px;
+}
+
+.BtnPrimary:hover {
+  background: #1558f6;
+  transition: all 0.5s ease;
+}
+
+.Form {
+  margin: 1rem auto;
+}
+
+.FormInput {
+  display: block;
+  margin: 1rem auto;
+  width: 75%;
+  padding: 0.5rem;
+  border: 1px solid #898989;
+  border-radius: 5px;
+  font-weight: bold;
+}
+
+.Logo {
+  width: 75%;
+  display: block;
+  margin: 0 auto;
+}
