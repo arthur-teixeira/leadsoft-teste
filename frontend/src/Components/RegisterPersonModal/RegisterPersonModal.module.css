@@ -1,0 +1,88 @@
+.ModalBackground {
+  position: absolute;
+  top: 0;
+  left: 0;
+  width: 100%;
+  height: 100vh;
+  background: rgba(0, 0, 0, 0.5);
+  z-index: 0;
+}
+
+.ModalContainer {
+  width: 500px;
+  padding: 2.5rem;
+  height: 450px;
+  background: #faf9f6;
+  position: absolute;
+  top: 10vh;
+  left: calc(50% - 250px);
+}
+
+.CloseBtn {
+  background: none;
+  padding: 0.5rem;
+  cursor: pointer;
+  position: relative;
+  left: 95%;
+  top: -5%;
+}
+
+.FormInput {
+  display: block;
+  margin: 1rem auto;
+  width: 75%;
+  padding: 0.5rem;
+  border: 1px solid #898989;
+  border-radius: 5px;
+  font-weight: bold;
+}
+
+.FormInputSml {
+  width: 35%;
+  padding: 0.5rem;
+  margin: 0 0.6rem;
+  border: 1px solid #898989;
+  border-radius: 5px;
+  font-weight: bold;
+}
+
+.FlexContainer {
+  display: flex;
+  align-content: center;
+  justify-content: center;
+}
+
+.BtnPrimary {
+  background: #04aafe;
+  color: white;
+  padding: 0.75rem;
+  margin: 0 auto;
+  width: 25%;
+  font-weight: bold;
+  border-radius: 5px;
+}
+
+.BtnPrimary:hover {
+  background: #1558f6;
+  transition: all 0.5s ease;
+}
+.BtnDanger {
+  background: #dc3545;
+  color: white;
+  padding: 0.75rem;
+  margin: 0 auto;
+  width: 25%;
+  border-radius: 5px;
+  font-weight: bold;
+}
+
+.BtnDanger:hover {
+  background: #ff0000;
+  transition: all 0.5s ease;
+}
+
+.BtnGroup {
+  margin: 1rem 0;
+  display: flex;
+  width: 100%;
+}
