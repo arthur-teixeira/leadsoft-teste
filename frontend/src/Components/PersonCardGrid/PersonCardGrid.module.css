@@ -1,0 +1,6 @@
+.GridWrapper {
+  margin: 0 auto;
+  width: 80vw;
+  display: grid;
+  grid-template-columns: repeat(3, 1fr);
+}
