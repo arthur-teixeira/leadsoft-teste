@@ -6,7 +6,8 @@ const useInputValue = initial => {
     value,
     onChange: e => {
       setValue(e.target.value || e.target.innerText)
-    }
+    },
+    setValue
   }
 }
 
