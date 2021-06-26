@@ -1,12 +1,17 @@
 import './App.css';
 
-import {LoginPage} from './Pages'
+import {LoginPage, PersonPage} from './Pages'
+import { PersonModalContextProvider, PersonHandlerProvider, PersonDataContextProvider } from './Contexts';
 
 function App() {
   return (
-    <>
-      <LoginPage/>
-    </>
+    <PersonModalContextProvider>
+      <PersonDataContextProvider>
+        <PersonHandlerProvider>
+          <PersonPage/>
+        </PersonHandlerProvider>
+      </PersonDataContextProvider>
+    </PersonModalContextProvider>
   );
 }
 

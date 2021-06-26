@@ -1,17 +1,21 @@
-import React from 'react';
+import React, { useContext } from 'react';
 
 import styles from './PersonCard.module.css'
 import { IoPersonCircleOutline } from 'react-icons/io5'
 import { RiDeleteBin5Line, RiPencilLine } from 'react-icons/ri'
 import propTypes from 'prop-types'
 
-const PersonCard = ({personDatapdata}) => {
-  const personData = 
-  {
-    name: "Arthur Teixeira",
-    height: 1.50,
-    weight: 50,
-    id: "1982741982"
+import { PersonModalContext, PersonHandler, PersonDataContext } from '../../Contexts'
+
+const PersonCard = ({personData}) => {
+  const toggle = useContext(PersonModalContext)[1];
+  const setPersonHandler = useContext(PersonHandler)[1];
+  const setPersonData = useContext(PersonDataContext)[1];
+
+  const handleEditClick = async e => {
+    await setPersonHandler(false);
+    await setPersonData(personData);    
+    toggle()
   }
 
   return (    
@@ -31,7 +35,7 @@ const PersonCard = ({personDatapdata}) => {
         </div>
       </div>
       <div className={styles.CardIcons}>
-        <RiPencilLine/>
+        <RiPencilLine onClick={handleEditClick}/>
         <RiDeleteBin5Line color = "#da1515"/>
       </div>      
     </div>      
