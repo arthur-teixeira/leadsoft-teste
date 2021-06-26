@@ -1,5 +1,7 @@
 import LoginPage from './Login'
+import PersonPage from './Person'
 
 export {
-  LoginPage
+  LoginPage,
+  PersonPage
 }
