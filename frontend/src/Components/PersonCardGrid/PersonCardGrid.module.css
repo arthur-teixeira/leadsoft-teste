@@ -3,4 +3,5 @@
   width: 80vw;
   display: grid;
   grid-template-columns: repeat(3, 1fr);
+  margin-top: 5rem;
 }
